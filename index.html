@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  </head>
+  <body>
+    <input class="form-control" placeholder="Nhập số n" id="n">
+    <br>
+    <button id="addButton" class="btn btn-primary mb-3" onclick="addNumber()">Thêm số</button>
+    <br>  
+    <div id="displayArea" class="alert-primary"></div>
+    <br>
+    <button id="sumPositiveButton" class="btn btn-primary mb-3" onclick="sumPositiveNumbers()">Tổng các số dương</button>
+    <br>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="demso" class="btn btn-primary mb-3" onclick="demso()">Đếm số</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="min" class="btn btn-primary mb-3" onclick="min()">Tìm số nhỏ nhất</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="minduong" class="btn btn-primary mb-3" onclick="minduong()">Tìm số dương nhỏ nhất</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="sochanend" class="btn btn-primary mb-3" onclick="sochanend()">Tìm số chẵn</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <input class="form-control" placeholder="Nhập số vị trí 1" id="a">
+    <br>
+    <input class="form-control" placeholder="Nhập số vị trí 2" id="b">
+    <br>
+    <button id="doicho" class="btn btn-primary mb-3" onclick="doicho()">Đổi chỗ</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="sapxep" class="btn btn-primary mb-3" onclick="sapxep()">Sắp xếp</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="songuyento" class="btn btn-primary mb-3" onclick="songuyento()">Tìm số nguyên tố</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="demsonguyen" class="btn btn-primary mb-3" onclick="demsonguyen()">Đếm số nguyên</button>
+    <div id="displayArea" class="alert-primary"></div>
+    <button id="sosanh" class="btn btn-primary mb-3" onclick="sosanh()">So sánh</button>
+    <div  style="display: none"
+    id="result-wrapper">
+    <br>
+    <p id="result" class="alert-primary"></p> 
+    <br>
+   <script src="index.js"></script>
+  </body>
+</html>
